@@ -85,3 +85,112 @@
 	  }
 	}
 }
+#masthead {
+	background-color: black;
+	>.wrapper.cap {
+		@media screen and (min-width: $tabwidth){
+			@include flexbox();
+			@include flexbox-justify(space-between);
+			@include flexbox-align-items(stretch);
+			@include flexbox-align-content(stretch);
+		}
+		>.logo.col-1 {
+			width: 80%;
+			margin: 0 auto;
+			@media screen and (min-width: $tabwidth){
+				width: 30%;
+			}
+		}
+		>.col-2 {
+			@media screen and (min-width: $tabwidth){
+				width: 65%;
+				@include flexbox();
+				@include flexbox-justify(space-between);
+				@include flexbox-align-items(stretch);
+				@include flexbox-align-content(stretch);
+				@include flexbox-direction(column);
+			}
+			>.row-1.social {
+				margin: 0 0 20px 0;
+				text-align: center;
+				@media screen and (min-width: $tabwidth){
+					text-align: right;
+				}
+				a {
+					color: white;
+					text-decoration: none;
+					margin: 0 10px;
+					font-size: 25px;
+					display: inline-block;
+					i {
+
+					}
+				}
+			}
+			>.row-2#site-navigation {
+				@media screen and (min-width: $tabwidth){
+					margin: auto 0 0 0;
+				}
+				button {
+					display: none;
+				}
+				>div {
+					ul {
+						margin: 0;
+						padding: 0;
+						text-align: center;
+						@media screen and (min-width: $tabwidth){
+							text-align: right;
+						}
+						li {
+							list-style-type: none;
+							padding: 0;
+							margin: 10px 0 0 0;
+							@media screen and (min-width: $tabwidth){
+								display: inline-block;
+								margin: 0 10px;
+							}
+							&:first-child {
+								margin-top: 0;
+							}
+							&:last-child {
+								@media screen and (min-width: $tabwidth){
+									margin-right: 0;
+								}
+							}
+							a {
+								text-decoration: none;
+								color: white;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+#colophon {
+	background-color: black;
+	>.wrapper {
+		>.wrapper.cap {
+			>.row-1.social {
+				a {
+					i {
+
+					}
+				}
+			}
+			>.row-2 {
+				>div {
+					ul {
+						li {
+							a {
+
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
