@@ -35,9 +35,9 @@
 	            </div>
 	        <?php } ?>
 			<div class="col-2">
-				<?php $facebook_link = get_field("facebook_link");
-				$linkedin_link = get_field("linkedin_link");
-				$instagram_link = get_field("instagram_link");
+				<?php $facebook_link = get_field("facebook_link","option");
+				$linkedin_link = get_field("linkedin_link","option");
+				$instagram_link = get_field("instagram_link","option");
 				if($facebook_link||$instagram_link||$linkedin_link):?>
 					<div class="row-1 social">
 						<?php if($instagram_link):?>

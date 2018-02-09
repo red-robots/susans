@@ -88,6 +88,7 @@
 #masthead {
 	background-color: black;
 	>.wrapper.cap {
+		padding: 20px 0 40px 0;
 		@media screen and (min-width: $tabwidth){
 			@include flexbox();
 			@include flexbox-justify(space-between);
@@ -99,29 +100,48 @@
 			margin: 0 auto;
 			@media screen and (min-width: $tabwidth){
 				width: 30%;
+				@include flexbox();
+				@include flexbox-justify(flex-end);
+				@include flexbox-align-items(stretch);
+				@include flexbox-align-content(stretch);
+				@include flexbox-direction(column);
+			}
+			a {
+				width: 100%;
+				display: block;
+				vertical-align: bottom;
+				img {
+					width: 100%;
+					display: block;
+				}
 			}
 		}
 		>.col-2 {
+			margin: 20px 0 0 0;
 			@media screen and (min-width: $tabwidth){
+				margin: 0;
 				width: 65%;
 				@include flexbox();
-				@include flexbox-justify(space-between);
+				@include flexbox-justify(center);
 				@include flexbox-align-items(stretch);
 				@include flexbox-align-content(stretch);
 				@include flexbox-direction(column);
 			}
 			>.row-1.social {
-				margin: 0 0 20px 0;
 				text-align: center;
 				@media screen and (min-width: $tabwidth){
 					text-align: right;
+					margin: 0 0 20px 0;
 				}
 				a {
 					color: white;
 					text-decoration: none;
 					margin: 0 10px;
-					font-size: 25px;
+					font-size: 30px;
 					display: inline-block;
+					@media screen and (min-width: $tabwidth){
+						font-size: 35px;
+					}
 					i {
 
 					}
@@ -135,6 +155,10 @@
 					display: none;
 				}
 				>div {
+					margin: 20px 0 0 0;
+					@media screen and (min-width: $tabwidth){
+						margin: 0;
+					}
 					ul {
 						margin: 0;
 						padding: 0;
@@ -148,7 +172,7 @@
 							margin: 10px 0 0 0;
 							@media screen and (min-width: $tabwidth){
 								display: inline-block;
-								margin: 0 10px;
+								margin: 0 20px;
 							}
 							&:first-child {
 								margin-top: 0;
@@ -161,6 +185,12 @@
 							a {
 								text-decoration: none;
 								color: white;
+								font-size: 18px;
+								font-weight: 300;
+								text-transform: uppercase;
+								@media screen and (min-width: $tabwidth){
+									font-size: 22px;
+								}
 							}
 						}
 					}
@@ -172,20 +202,59 @@
 #colophon {
 	background-color: black;
 	>.wrapper {
+		background-size: cover;
+		background-position: center;
 		>.wrapper.cap {
+			padding: 50px 0 100px 0;
 			>.row-1.social {
+				text-align: center;
 				a {
+					color: white;
+					text-decoration: none;
+					margin: 0 10px;
+					font-size: 30px;
+					display: inline-block;
+					@media screen and (min-width: $tabwidth){
+						font-size: 45px;
+						margin: 0 20px;
+					}
 					i {
 
 					}
 				}
 			}
 			>.row-2 {
+				margin: 50px 0 0 0;
 				>div {
 					ul {
+						margin: 0;
+						padding: 0;
+						text-align: center;
 						li {
+							list-style-type: none;
+							padding: 0;
+							margin: 10px 0 0 0;
+							@media screen and (min-width: $tabwidth){
+								display: inline-block;
+								margin: 0 20px;
+							}
+							&:first-child {
+								margin-top: 0;
+							}
+							&:last-child {
+								@media screen and (min-width: $tabwidth){
+									margin-right: 0;
+								}
+							}
 							a {
-
+								text-decoration: none;
+								color: white;
+								font-size: 18px;
+								font-weight: 300;
+								text-transform: uppercase;
+								@media screen and (min-width: $tabwidth){
+									font-size: 22px;
+								}
 							}
 						}
 					}
