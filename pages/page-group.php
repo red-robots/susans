@@ -11,7 +11,7 @@ get_header(); ?>
 			<?php
 			if ( have_posts() ) : the_post();
 
-				get_template_part( 'template-parts/content', 'page' );
+				get_template_part( 'template-parts/content', 'page-group' );
 
 			endif; // End of the loop.
 			?>

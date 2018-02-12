@@ -30,7 +30,7 @@
 	            <a href="<?php bloginfo('url'); ?>"><img src="<?php echo get_template_directory_uri()."/images/logo.png";?>" alt="<?php bloginfo('name'); ?>"></a>
 	            </h1>
 	        <?php } else { ?>
-	            <div class="logo col-2">
+	            <div class="logo col-1">
 	            <a href="<?php bloginfo('url'); ?>"><img src="<?php echo get_template_directory_uri()."/images/logo.png";?>" alt="<?php bloginfo('name'); ?>"></a>
 	            </div>
 	        <?php } ?>

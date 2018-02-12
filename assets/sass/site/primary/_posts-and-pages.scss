@@ -1,0 +1,248 @@
+.template-index {
+    >.row-1 {
+        border-top: 10px solid $color__s-grey;
+        img {
+            width: 100%;
+            display: block;
+            @media screen and (min-width: $tabwidth){
+                float: left;
+                width: 25%;
+            }
+        }
+    }
+    >.row-2 {
+        background-color: $color__s-grey;
+        >.wrapper.cap {
+            text-align: center;
+            color: white;
+            padding: 20px;
+            font-size: 25px;
+            font-family: $font__two;
+            font-weight: 300;
+            line-height: 1.2;
+            text-transform: uppercase;
+            @media screen and (min-width: $tabwidth){
+                font-size: 35px;
+            }
+        }
+    }
+    >.row-3 {
+        position: relative;
+        z-index: 1;
+        &:before {
+            content: "";
+            display: block;
+            position: absolute;
+            width: 100%;
+            top: 0;
+            left: 0;
+            height: 50%;
+            z-index: -1;
+            background-color: $color__s-dark-grey;
+        }
+        >.wrapper.cap {
+            >.wrapper {
+                padding: 20px 0;
+                @media screen and (min-width: $tabwidth){
+                    padding: 5% 10% 8% 10%;
+                }
+                >.col-1, >.col-2 {
+                    background-color: white;
+                    box-shadow: 0 0 20px black;
+                    @media screen and (min-width: $tabwidth){
+                        float: left;
+                        box-shadow: 0 0 50px black;
+                        width: 43%;
+                    }
+                    a {
+                        display: block;
+                        padding: 20px;
+                        text-decoration: none;
+                        @media screen and (min-width: $tabwidth){
+                            padding: 40px;
+                        }
+                        header {
+                            margin: 0 0 20px 0;
+                            @media screen and (min-width: $tabwidth){
+                                margin: 0 0 40px 0;
+                            }
+                            h2 {
+                                text-align: center;
+                                color: $color__s-grey;
+                                margin: 0;
+                                font-size: 20px;
+                                font-family: $font__two;
+                                font-weight: 300;
+                                line-height: 1.2;
+                                text-transform: uppercase;
+                                @media screen and (min-width: $tabwidth){
+                                    font-size: 30px;
+                                }
+                            }
+                        }
+                        img {
+                            display: block;
+                            width: 100%;
+                        }
+                    }
+                }
+                >.col-1 {
+                    @media screen and (min-width: $tabwidth){
+                        margin: 0 7% 0 0;
+                    }
+                }
+                >.col-2 {
+                    margin: 40px 0 0 0;
+                    @media screen and (min-width: $tabwidth){
+                        margin: 0 0 0 7%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.template-page {
+    >.wrapper.cap {
+        >.wrapper {
+            padding: 20px 0;
+            @media screen and (min-width: $tabwidth){
+                padding: 10% 6%;
+            }
+            header.row-1 {
+                margin: 0 0 20px 0;
+                @media screen and (min-width: $tabwidth){
+                    margin: 0 0 3% 0;
+                }
+                h1 {
+                    margin: 0;
+                    font-family: $font__two;
+                    font-weight: 300;
+                    font-size: 25px;
+                    text-transform: uppercase;
+                    color: $color__s-grey;
+                    line-height: 1.2;
+                    @media screen and (min-width: $tabwidth){
+                        font-size: 35px;
+                    }
+                }
+            }
+            >.row-2 {
+                >.col-1 {
+                    width: 100%;
+                    @media screen and (min-width: $tabwidth){
+                        float: left;
+                        width: 70%;
+                        padding: 0 7% 0 0;
+                    }
+                }
+                >.col-2 {
+                    width: 100%;
+                    @media screen and (min-width: $tabwidth){
+                        float: left;
+                        width: 30%;
+                    }
+                    img {
+                        display: block;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.template-page-group {
+    >.wrapper.cap {
+        >.wrapper {
+            padding: 20px 0 40px 0;
+            @media screen and (min-width: $tabwidth){
+                padding: 8% 6% 4% 6%;
+            }
+            header.row-1 {
+                margin: 0 0 30px 0;
+                @media screen and (min-width: $tabwidth){
+                    margin: 0 0 5% 0;
+                }
+                h1 {
+                    margin: 0;
+                    font-family: $font__two;
+                    font-weight: 300;
+                    font-size: 25px;
+                    text-transform: uppercase;
+                    color: $color__s-grey;
+                    line-height: 1.2;
+                    @media screen and (min-width: $tabwidth){
+                        font-size: 35px;
+                    }
+                }
+            }
+            >.row-2 {
+                >.col {
+                    margin: 40px 0 0 0;
+                    background-color: white;
+                    box-shadow: 0 0 20px black;
+                    @media screen and (min-width: $tabwidth){
+                        float: left;
+                        box-shadow: 0 0 50px black;
+                        width: 43%;
+                    }
+                    &:hover {
+                        background-color: black;
+                        a {
+                            header {
+                                h2 {
+                                    color: $color__s-teal;
+                                }
+                            }
+                        }
+                    }
+                    a {
+                        display: block;
+                        padding: 20px;
+                        text-decoration: none;
+                        @media screen and (min-width: $tabwidth){
+                            padding: 40px;
+                        }
+                        header {
+                            margin: 0 0 20px 0;
+                            @media screen and (min-width: $tabwidth){
+                                margin: 0 0 40px 0;
+                            }
+                            h2 {
+                                text-align: center;
+                                color: $color__s-grey;
+                                margin: 0;
+                                font-size: 20px;
+                                font-family: $font__two;
+                                font-weight: 300;
+                                line-height: 1.2;
+                                text-transform: uppercase;
+                                @media screen and (min-width: $tabwidth){
+                                    font-size: 30px;
+                                }
+                            }
+                        }
+                        img {
+                            display: block;
+                            width: 100%;
+                        }
+                    }
+                }
+                >.col:first-child {
+                    margin-top: 0;
+                }
+                >.col:nth-child(odd) {
+                    @media screen and (min-width: $tabwidth){
+                        margin: 0 7% 7% 0;
+                    }
+                }
+                >.col:nth-child(even) {
+                    @media screen and (min-width: $tabwidth){
+                        margin: 0 0 7% 7%;
+                    }
+                }
+            }
+        }
+    }
+}

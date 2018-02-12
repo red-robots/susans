@@ -19,7 +19,7 @@ get_header(); ?>
 
 		<?php
 			/* Start the Loop */
-			$post = get_post();
+			$post = get_post(17);
 			if ( $post ) : 
 				setup_postdata($post);
 
