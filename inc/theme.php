@@ -173,3 +173,78 @@ function ac_first_and_last_menu_class($items) {
   return $items;
 }
 add_filter('wp_nav_menu_objects', 'ac_first_and_last_menu_class');
+
+//More posts - first for logged in users, other for not logged in
+add_action('wp_ajax_bella_ajax_next_posts', 'bella_ajax_next_posts');
+add_action('wp_ajax_nopriv_bella_ajax_next_posts', 'bella_ajax_next_posts');
+
+function bella_ajax_next_posts() {
+
+    //Build query
+    $args = array(
+      'order'=>'ASC',
+      'orderby'=>'date'
+    );
+
+    if(!empty($_GET['post_type'])){
+      $args['post_type']=$_GET['post_type'];
+    }
+
+    if(!empty( $_GET['tax_type'])&&!empty( $_GET['tax_type_value'])){
+      $args['tax_query']= array(array(
+        'taxonomy'=>$_GET['tax_type'],
+        'field'=>'term_id',
+        'terms'=>$_GET['tax_type_value']
+      ));
+    }
+    //Get offset
+    if( ! empty( $_GET['post_offset'] ) ) {
+
+        $args['offset'] = $_GET['post_offset'];
+
+        //Also have to set posts_per_page, otherwise offset is ignored
+        $args['posts_per_page'] = 4;
+    }
+
+    $count_results = '0';
+
+    $query_results = new WP_Query( $args );
+
+    //Results found
+    if ( $query_results->have_posts() ) {
+
+        $count_results = $query_results->post_count;
+
+        //Start "saving" results' HTML
+        $results_html = '';
+        ob_start();
+
+        while ( $query_results->have_posts() ) { 
+
+            $query_results->the_post();
+
+            $image = get_field("featured_image");
+            echo '<div class="col js-blocks">';
+            echo '<a href="'.get_permalink().'">';
+            echo '<header>';
+            echo '<h2>'.get_the_title().'</h2>';
+            echo '</header>';
+            echo '<img src="'.$image['url'].'" alt="'.$image['alt'].'">';
+            echo '</a>';
+            echo '</div><!--.col-->';
+        }    
+
+        //"Save" results' HTML as variable
+        $results_html = ob_get_clean();  
+    }
+
+    //Build ajax response
+    $response = array();
+
+    //1. value is HTML of new posts and 2. is total count of posts
+    array_push ( $response, $results_html, $count_results );
+    echo json_encode( $response );
+
+    //Always use die() in the end of ajax functions
+    die();  
+}

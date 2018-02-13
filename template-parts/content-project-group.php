@@ -19,9 +19,9 @@
             if($tax):
                 $args = array(
                     'post_type'=>'project',
-                    'posts_per_page'=>-1,
+                    'posts_per_page'=>4,
                     'order'=>'ASC',
-                    'orderby'=>'menu_order',
+                    'orderby'=>'date',
                     'tax_query'=>array(array(
                         'taxonomy'=>'project_type',
                         'field'=>'term_id',
@@ -30,7 +30,8 @@
                 );
                 $query = new WP_Query($args);
                 if($query->have_posts()):?>
-                    <div class="row-2 clear-bottom">
+                    <div id="offset"><?php echo $query->post_count;?></div>
+                    <div class="row-2 clear-bottom tracking">
                         <?php while($query->have_posts()):$query->the_post();
                             $image = get_field("featured_image");?>
                             <div class="col js-blocks">
@@ -40,7 +41,7 @@
                                     </header>
                                     <img src="<?php echo $image['url'];?>" alt="<?php echo $image['alt'];?>">
                                 </a>
-                            </div><!--.col-2-->
+                            </div><!--.col-->
                         <?php endwhile;?>
                     </div><!--.row-2-->
                     <?php wp_reset_postdata();

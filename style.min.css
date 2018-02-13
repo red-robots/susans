@@ -779,7 +779,8 @@ html[xmlns] .flexslider .slides{display:block}
 @media screen and (min-width:600px){#colophon>.wrapper>.wrapper.cap>.row-2>div ul li:last-child{margin-right:0}
 }#colophon>.wrapper>.wrapper.cap>.row-2>div ul li a{text-decoration:none;color:white;font-size:18px;font-weight:300;text-transform:uppercase}
 @media screen and (min-width:600px){#colophon>.wrapper>.wrapper.cap>.row-2>div ul li a{font-size:22px}
-}.template-index>.row-1{border-top:10px solid grey}
+}#offset{display:none}
+.template-index>.row-1{border-top:10px solid grey}
 .template-index>.row-1 img{width:100%;display:block}
 @media screen and (min-width:600px){.template-index>.row-1 img{float:left;width:25%}
 }.template-index>.row-2{background-color:grey}

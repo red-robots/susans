@@ -24,6 +24,21 @@ function acstarter_scripts() {
 			array(), '20120206', 
 			true 
 		);
+	$vars = array(
+		'url' => admin_url( 'admin-ajax.php' ),
+	);
+	$cpt = get_field("cpt");
+	if($cpt){
+		$vars['posttype']=$cpt;
+	} else {
+		$vars['posttype']=get_post_type();
+	}
+	$tax = get_field("category");
+	if($tax){
+		$vars['taxtype']='project_type';
+		$vars['taxtypevalue']=$tax;	
+	}
+	wp_localize_script( 'acstarter-custom', 'bellaajaxurl', $vars);
 
 	wp_enqueue_script('font-awesome','https://use.fontawesome.com/8f931eabc1.js');
 
