@@ -735,12 +735,11 @@ html[xmlns] .flexslider .slides{display:block}
 .copy h1{font-size:30px}
 .copy h2{font-size:25px}
 .copy h3{font-size:20px}
-.copy>ul,.copy>ol{padding:0;margin:0 0 20px 20px;font-size:inherit}
-.copy>ul li,.copy>ol li{margin:0;font-size:inherit;padding:0;list-style-type:none;text-indent:-14px}
-.copy>ul li:before,.copy>ol li:before{content:"\25A0";color:black;margin-right:5px}
-.copy>ul li a,.copy>ol li a{cursor:pointer}
-.copy>ul li a:hover,.copy>ol li a:hover{color:black}
-.copy>ul li ul.sub-menu,.copy>ol li ul.sub-menu{margin:0}
+.copy ul,.copy ol{padding:0;margin:0 0 20px 30px;font-size:inherit}
+.copy ul li,.copy ol li{margin:0;font-size:inherit;padding:0;list-style-type:disc}
+.copy ul li a,.copy ol li a{cursor:pointer}
+.copy ul li a:hover,.copy ol li a:hover{color:black}
+.copy ul li ul.sub-menu,.copy ol li ul.sub-menu{margin-bottom:0}
 #masthead{background-color:black}
 #masthead>.wrapper.cap{padding:20px 0 40px 0}
 @media screen and (min-width:600px){#masthead>.wrapper.cap{display:-webkit-box;display:-ms-flexbox;display:-webkit-flex;display:flex;-webkit-justify-content:space-between;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-webkit-align-items:stretch;-webkit-box-align:stretch;-ms-flex-align:stretch;align-items:stretch;-webkit-align-content:stretch;-ms-flex-line-pack:stretch;align-content:stretch}

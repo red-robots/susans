@@ -22,13 +22,13 @@
 				if($facebook_link||$instagram_link||$linkedin_link):?>
 					<div class="row-1 social">
 						<?php if($instagram_link):?>
-							<a href="<?php echo $instagram_link;?>"><i class="fa fa-instagram"></i></a>
+							<a href="<?php echo $instagram_link;?>" target="_blank"><i class="fa fa-instagram"></i></a>
 						<?php endif;?>
 						<?php if($linkedin_link):?>
-							<a href="<?php echo $linkedin_link;?>"><i class="fa fa-linkedin"></i></a>
+							<a href="<?php echo $linkedin_link;?>" target="_blank"><i class="fa fa-linkedin"></i></a>
 						<?php endif;?>
 						<?php if($facebook_link):?>
-							<a href="<?php echo $facebook_link;?>"><i class="fa fa-facebook"></i></a>
+							<a href="<?php echo $facebook_link;?>" target="_blank"><i class="fa fa-facebook"></i></a>
 						<?php endif;?>
 					</div><!--.row-1-->
 				<?php endif;?>
