@@ -186,6 +186,9 @@
 								@media screen and (min-width: $tabwidth){
 									font-size: 22px;
 								}
+								&:hover {
+									color: $color__s-teal;
+								}
 							}
 						}
 					}

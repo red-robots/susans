@@ -48,11 +48,21 @@
                 }
                 >.col-1, >.col-2 {
                     background-color: white;
-                    box-shadow: 0 0 20px black;
+                    box-shadow: 0 0 20px $color__s-border;
                     @media screen and (min-width: $tabwidth){
                         float: left;
-                        box-shadow: 0 0 50px black;
+                        box-shadow: 0 0 50px $color__s-border;
                         width: 43%;
+                    }
+                    &:hover {
+                        background-color: black;
+                        a {
+                            header {
+                                h2 {
+                                    color: $color__s-teal;
+                                }
+                            }
+                        }
                     }
                     a {
                         display: block;
@@ -244,10 +254,10 @@
                 >.col {
                     margin: 40px 0 0 0;
                     background-color: white;
-                    box-shadow: 0 0 20px black;
+                    box-shadow: 0 0 20px $color__s-border;
                     @media screen and (min-width: $tabwidth){
                         float: left;
-                        box-shadow: 0 0 50px black;
+                        box-shadow: 0 0 50px $color__s-border;
                         width: 43%;
                     }
                     &:hover {
