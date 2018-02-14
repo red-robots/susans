@@ -26,6 +26,7 @@ function acstarter_scripts() {
 		);
 	$vars = array(
 		'url' => admin_url( 'admin-ajax.php' ),
+		'postid'=>get_the_ID()
 	);
 	$cpt = get_field("cpt");
 	if($cpt){

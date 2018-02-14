@@ -126,14 +126,70 @@ jQuery(document).ready(function ($) {
 	var $window = $(window);
 	var $document = $(document);
 	var $tracking = $('.tracking');
-	$window.scroll(function(){
-		var top = $tracking.offset().top;
-		var height = $tracking.height();
-		var w_height = $window.height();
-		var d_scroll = $document.scrollTop();
-		if(w_height+d_scroll>height+top){
-			ajax_next_posts();
+	if($tracking.length>0){
+		$window.scroll(function(){
+			var top = $tracking.offset().top;
+			var height = $tracking.height();
+			var w_height = $window.height();
+			var d_scroll = $document.scrollTop();
+			if(w_height+d_scroll>height+top){
+				ajax_next_posts();
+			}
+		});
+	}
+
+	//ajaxLock is just a flag to prevent double clicks and spamming
+	var ajaxLockImage = false;
+
+	var postOffsetImage = parseInt(jQuery( '#offset' ).text());
+	//Change that to your right site url unless you've already set global ajaxURL
+	var ajaxURLImage = bellaajaxurl.url;
+
+	function ajax_next_image() {
+		if( ! ajaxLockImage ) {
+			ajaxLockImage = true;
+			
+			//Parameters you want to pass to query
+			var ajaxData = '&post_offset=' + postOffsetImage + '&post_id='+bellaajaxurl.postid+'&action=bella_ajax_next_image';
+
+			//Ajax call itself
+			jQuery.ajax({
+
+				type: 'get',
+				url:  ajaxURLImage,
+				data: ajaxData,
+				dataType: 'json',
+
+				//Ajax call is successful
+				success: function ( response ) {
+					console.log(response);
+					if(parseInt(response[1])!==0){
+						$trackingImage.append(response[0]);
+						postOffsetImage+=parseInt(response[1]);
+						ajaxLockImage = false;
+					}
+				},
+
+				//Ajax call is not successful, still remove lock in order to try again
+				error: function (err) {
+					console.log(err);
+					ajaxLockImage = false;
+				}
+			});
 		}
-	});
+	}
+	
+	var $trackingImage = $('.tracking-images');
+	if($trackingImage.length>0){
+		$window.scroll(function(){
+			var top = $trackingImage.offset().top;
+			var height = $trackingImage.height();
+			var w_height = $window.height();
+			var d_scroll = $document.scrollTop();
+			if(w_height+d_scroll>height+top){
+				ajax_next_image();
+			}
+		});
+	}
 
 });// END #####################################    END

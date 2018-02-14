@@ -151,6 +151,66 @@
         }
     }
 }
+.template-single-project {
+    >.wrapper.cap {
+        >.wrapper {
+            padding: 20px 0;
+            @media screen and (min-width: $tabwidth){
+                padding: 10% 6%;
+            }
+            header.row-1 {
+                margin: 0 0 20px 0;
+                @media screen and (min-width: $tabwidth){
+                    margin: 0 0 3% 0;
+                }
+                h1 {
+                    margin: 0;
+                    font-family: $font__two;
+                    font-weight: 300;
+                    font-size: 25px;
+                    text-transform: uppercase;
+                    color: $color__s-grey;
+                    line-height: 1.2;
+                    @media screen and (min-width: $tabwidth){
+                        font-size: 35px;
+                    }
+                }
+            }
+            >.row-2 {
+                >.copy {
+
+                }
+                >.gallery {
+                    margin: 40px 0 0 0;
+                    .image-container {
+                        float: left;
+                        width: 100%;
+                        margin: 0 0 20px 0;
+                        &.vertical {
+                            @media screen and (min-width: $tabwidth){
+                                width: calc(50% - 10px);
+                            }
+                            &.first {
+                                @media screen and (min-width: $tabwidth){
+                                    margin: 0 10px 20px 0;
+                                }
+                            }
+                            &.last {
+                                @media screen and (min-width: $tabwidth){
+                                    margin: 0 0 20px 10px;
+                                }
+                            }
+                        }
+                        img {
+                            width: 100%;
+                            display: block;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
 
 .template-page-group {
     >.wrapper.cap {
