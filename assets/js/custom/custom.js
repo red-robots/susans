@@ -162,7 +162,6 @@ jQuery(document).ready(function ($) {
 
 				//Ajax call is successful
 				success: function ( response ) {
-					console.log(response);
 					if(parseInt(response[1])!==0){
 						$trackingImage.append(response[0]);
 						postOffsetImage+=parseInt(response[1]);
@@ -172,7 +171,6 @@ jQuery(document).ready(function ($) {
 
 				//Ajax call is not successful, still remove lock in order to try again
 				error: function (err) {
-					console.log(err);
 					ajaxLockImage = false;
 				}
 			});
