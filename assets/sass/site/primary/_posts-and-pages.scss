@@ -130,7 +130,7 @@
                     font-weight: 300;
                     font-size: 25px;
                     text-transform: uppercase;
-                    color: $color__s-grey;
+                    color: $color__s-dark-grey;
                     line-height: 1.2;
                     @media screen and (min-width: $tabwidth){
                         font-size: 35px;
@@ -166,7 +166,7 @@
         >.wrapper {
             padding: 20px 0;
             @media screen and (min-width: $tabwidth){
-                padding: 10% 6%;
+                padding: 10% 6% 5% 6%;
             }
             header.row-1 {
                 margin: 0 0 20px 0;
@@ -179,7 +179,7 @@
                     font-weight: 300;
                     font-size: 25px;
                     text-transform: uppercase;
-                    color: $color__s-grey;
+                    color: $color__s-dark-grey;
                     line-height: 1.2;
                     @media screen and (min-width: $tabwidth){
                         font-size: 35px;
@@ -198,25 +198,60 @@
                     .image-container {
                         float: left;
                         width: 100%;
-                        margin: 0 0 20px 0;
+                        margin: 0 0 40px 0;
+                        @media screen and (min-width: $tabwidth){
+                            margin: 0 0 50px 0;
+                        }
                         &.vertical {
                             @media screen and (min-width: $tabwidth){
-                                width: calc(50% - 10px);
+                                width: calc(50% - 25px);
                             }
                             &.first {
                                 @media screen and (min-width: $tabwidth){
-                                    margin: 0 10px 20px 0;
+                                    margin: 0 25px 50px 0;
                                 }
                             }
                             &.last {
                                 @media screen and (min-width: $tabwidth){
-                                    margin: 0 0 20px 10px;
+                                    margin: 0 0 50px 25px;
                                 }
                             }
                         }
                         img {
                             width: 100%;
                             display: block;
+                        }
+                    }
+                }
+                >nav.next  {
+                    text-align: center;
+                    margin: 20px 0 0 0;
+                    @media screen and (min-width: $tabwidth){
+                        margin: calc(5% - 50px) 0 0 0;
+                    }
+                    a {
+                        text-decoration: none;
+                        font-size: 25px;
+                        font-family: $font__two;
+                        font-weight: 300;
+                        vertical-align: middle;
+                        text-transform: uppercase;
+                        color: $color__s-dark-grey;
+                        line-height: .8;
+                        @media screen and (min-width: $tabwidth){
+                            font-size: 40px;
+                        }
+                        &:hover {
+                            color: $color__s-teal;
+                        }
+                        span {
+                            font-size: 20px;
+                            line-height: 1;
+                            display: inline-block;
+                            vertical-align: middle;
+                            @media screen and (min-width: $tabwidth){
+                                font-size: 30px;
+                            }
                         }
                     }
                 }
@@ -243,7 +278,7 @@
                     font-weight: 300;
                     font-size: 25px;
                     text-transform: uppercase;
-                    color: $color__s-grey;
+                    color: $color__s-dark-grey;
                     line-height: 1.2;
                     @media screen and (min-width: $tabwidth){
                         font-size: 35px;

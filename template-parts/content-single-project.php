@@ -49,6 +49,23 @@
                         <?php endwhile;?>
                     </div><!--.gallery-->
                     <div id="offset"><?php echo $display_count;?></div><!--#offset-->
+                <?php endif;
+                $next_post_link_text = get_field("next_post_link_text", "option");
+                if($next_post_link_text):?>
+                    <?php $args = array(
+						'post_type'=>'project',
+						'posts_per_page' => -1,
+						'orderby'=>'date',
+						'order'=>'ASC'
+					);
+					$posts = get_posts($args);
+					$index = array_search($post,$posts);
+					if($index !== false && count($posts)>1):?>
+						<nav class="next">
+                            <?php $next_index = $index < (count($posts) -1) ? $index +1 : 0; ?>
+                            <a href="<?php echo get_the_permalink($posts[$next_index]);?>"><?php echo $next_post_link_text; ?>&nbsp;<span>>></span></a>
+						</nav><!-- .nav-single -->
+					<?php endif;?>
                 <?php endif;?>
             </div><!--.row-2-->
         </div><!--.wrapper-->
