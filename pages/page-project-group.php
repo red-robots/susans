@@ -3,6 +3,9 @@
  * Template Name: Project Group 
  */
 
+global $bella_pt;
+$bella_pt = 'project';
+
 get_header(); ?>
 
 	<div id="primary" class="content-area">
@@ -11,7 +14,7 @@ get_header(); ?>
 			<?php
 			if ( have_posts() ) : the_post();
 
-				get_template_part( 'template-parts/content', 'project-group' );
+				get_template_part( 'template-parts/content', 'group' );
 
 			endif; // End of the loop.
 			?>

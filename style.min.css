@@ -819,8 +819,9 @@ html[xmlns] .flexslider .slides{display:block}
 @media screen and (min-width:600px){.template-single-project>.wrapper.cap>.wrapper header.row-1{margin:0 0 3% 0}
 }.template-single-project>.wrapper.cap>.wrapper header.row-1 h1{margin:0;font-family:"Open Sans",sans-serif;font-weight:300;font-size:25px;text-transform:uppercase;color:grey;line-height:1.2}
 @media screen and (min-width:600px){.template-single-project>.wrapper.cap>.wrapper header.row-1 h1{font-size:35px}
-}.template-single-project>.wrapper.cap>.wrapper>.row-2>.gallery{margin:40px 0 0 0}
-.template-single-project>.wrapper.cap>.wrapper>.row-2>.gallery .image-container{float:left;width:100%;margin:0 0 20px 0}
+}.template-single-project>.wrapper.cap>.wrapper>.row-2>.gallery{margin:20px 0 0 0}
+@media screen and (min-width:600px){.template-single-project>.wrapper.cap>.wrapper>.row-2>.gallery{margin:3% 0 0 0}
+}.template-single-project>.wrapper.cap>.wrapper>.row-2>.gallery .image-container{float:left;width:100%;margin:0 0 20px 0}
 @media screen and (min-width:600px){.template-single-project>.wrapper.cap>.wrapper>.row-2>.gallery .image-container.vertical{width:calc(50% - 10px)}
 }@media screen and (min-width:600px){.template-single-project>.wrapper.cap>.wrapper>.row-2>.gallery .image-container.vertical.first{margin:0 10px 20px 0}
 }@media screen and (min-width:600px){.template-single-project>.wrapper.cap>.wrapper>.row-2>.gallery .image-container.vertical.last{margin:0 0 20px 10px}

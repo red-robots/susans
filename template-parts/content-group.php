@@ -7,6 +7,7 @@
  * @package ACStarter
  */
 
+global $bella_pt;
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class("template-page-group"); ?>>
@@ -15,19 +16,21 @@
             <header class="row-1">
                 <h1><?php the_title();?></h1>
             </header><!--.row-1-->
-            <?php $tax = get_field("category");
-            if($tax):
+            <?php if(!empty($bella_pt)):
                 $args = array(
-                    'post_type'=>'project',
+                    'post_type'=>$bella_pt,
                     'posts_per_page'=>4,
                     'order'=>'ASC',
                     'orderby'=>'date',
-                    'tax_query'=>array(array(
+                );
+                $tax = get_field("category");
+                if($tax):
+                    $args['tax_query']=array(array(
                         'taxonomy'=>'project_type',
                         'field'=>'term_id',
                         'terms'=>$tax
-                    ))
-                );
+                    ));
+                endif;
                 $query = new WP_Query($args);
                 if($query->have_posts()):?>
                     <div id="offset"><?php echo $query->post_count;?></div>

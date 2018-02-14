@@ -181,7 +181,10 @@
 
                 }
                 >.gallery {
-                    margin: 40px 0 0 0;
+                    margin: 20px 0 0 0;
+                    @media screen and (min-width: $tabwidth){
+                        margin: 3% 0 0 0;
+                    }
                     .image-container {
                         float: left;
                         width: 100%;
