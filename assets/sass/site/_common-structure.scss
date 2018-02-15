@@ -138,13 +138,21 @@
 						font-size: 35px;
 					}
 					i {
-
+						transform: scale(1);
+						@include transition(all ease .2s);
+						&:hover {
+							transform: scale(1.2);
+						}
 					}
 				}
 			}
 			>.row-2#site-navigation {
+				width: 100%;
 				@media screen and (min-width: $tabwidth){
 					margin: auto 0 0 0;
+				}
+				@media screen and (min-width: $midwidth){
+					// width: auto;
 				}
 				button {
 					display: none;
@@ -167,6 +175,12 @@
 							margin: 10px 0 0 0;
 							@media screen and (min-width: $tabwidth){
 								display: inline-block;
+								margin: 0 5px;
+							}
+							@media screen and (min-width: $midwidth){
+								margin: 0 10px;
+							}
+							@media screen and (min-width: $deskwidth){
 								margin: 0 20px;
 							}
 							&:first-child {
@@ -183,7 +197,14 @@
 								font-size: 18px;
 								font-weight: 300;
 								text-transform: uppercase;
+								@include transition(all ease .2s);
 								@media screen and (min-width: $tabwidth){
+									font-size: 12px;
+								}
+								@media screen and (min-width: $midwidth){
+									font-size: 18px;
+								}
+								@media screen and (min-width: $deskwidth){
 									font-size: 22px;
 								}
 								&:hover {
@@ -213,11 +234,21 @@
 					font-size: 30px;
 					display: inline-block;
 					@media screen and (min-width: $tabwidth){
-						font-size: 45px;
+						font-size: 35px;
 						margin: 0 20px;
 					}
+					@media screen and (min-width: $midwidth){
+						font-size: 40px;
+					}
+					@media screen and (min-width: $deskwidth){
+						font-size: 45px;
+					}
 					i {
-
+						transform: scale(1);
+						@include transition(all ease .2s);
+						&:hover {
+							transform: scale(1.2);
+						}
 					}
 				}
 			}
@@ -250,8 +281,18 @@
 								font-size: 18px;
 								font-weight: 300;
 								text-transform: uppercase;
+								@include transition(all ease .2s);
 								@media screen and (min-width: $tabwidth){
+									font-size: 14px;
+								}
+								@media screen and (min-width: $midwidth){
+									font-size: 18px;
+								}
+								@media screen and (min-width: $deskwidth){
 									font-size: 22px;
+								}
+								&:hover {
+									color: $color__s-teal;
 								}
 							}
 						}

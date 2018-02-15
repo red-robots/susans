@@ -22,6 +22,12 @@
             line-height: 1.2;
             text-transform: uppercase;
             @media screen and (min-width: $tabwidth){
+                font-size: 22px;
+            }
+            @media screen and (min-width: $midwidth){
+                font-size: 30px;
+            }
+            @media screen and (min-width: $deskwidth){
                 font-size: 35px;
             }
         }
@@ -48,10 +54,14 @@
                 }
                 >.col-1, >.col-2 {
                     background-color: white;
-                    box-shadow: 0 0 20px $color__s-border;
+                    // box-shadow: 0 0 20px $color__s-border;
+                    -webkit-box-shadow: 0px 5px 9px 1px rgba($color__s-border,0.33);
+                    -moz-box-shadow: 0px 5px 9px 1px rgba($color__s-border,0.33);
+                    box-shadow: 0px 5px 9px 1px rgba($color__s-border,0.33);
+                    @include transition(all ease .3s);
                     @media screen and (min-width: $tabwidth){
                         float: left;
-                        box-shadow: 0 0 50px $color__s-border;
+                        // box-shadow: 0 0 50px $color__s-border;
                         width: 43%;
                     }
                     &:hover {
@@ -69,6 +79,12 @@
                         padding: 20px;
                         text-decoration: none;
                         @media screen and (min-width: $tabwidth){
+                            padding: 20px;
+                        }
+                        @media screen and (min-width: $midwidth){
+                            padding: 30px;
+                        }
+                        @media screen and (min-width: $deskwidth){
                             padding: 40px;
                         }
                         header {
@@ -86,6 +102,12 @@
                                 line-height: 1.2;
                                 text-transform: uppercase;
                                 @media screen and (min-width: $tabwidth){
+                                    font-size: 22px;
+                                }
+                                @media screen and (min-width: $midwidth){
+                                    font-size: 26px;
+                                }
+                                @media screen and (min-width: $deskwidth){
                                     font-size: 30px;
                                 }
                             }
@@ -289,7 +311,10 @@
                 >.col {
                     margin: 40px 0 0 0;
                     background-color: white;
-                    box-shadow: 0 0 20px $color__s-border;
+                    -webkit-box-shadow: 0px 5px 9px 1px rgba($color__s-border,0.33);
+                    -moz-box-shadow: 0px 5px 9px 1px rgba($color__s-border,0.33);
+                    box-shadow: 0px 5px 9px 1px rgba($color__s-border,0.33);
+                    @include transition(all ease .2s);
                     @media screen and (min-width: $tabwidth){
                         float: left;
                         box-shadow: 0 0 50px $color__s-border;
@@ -310,6 +335,12 @@
                         padding: 20px;
                         text-decoration: none;
                         @media screen and (min-width: $tabwidth){
+                            padding: 20px;
+                        }
+                        @media screen and (min-width: $midwidth){
+                            padding: 30px;
+                        }
+                        @media screen and (min-width: $deskwidth){
                             padding: 40px;
                         }
                         header {
@@ -327,6 +358,12 @@
                                 line-height: 1.2;
                                 text-transform: uppercase;
                                 @media screen and (min-width: $tabwidth){
+                                    font-size: 22px;
+                                }
+                                @media screen and (min-width: $midwidth){
+                                    font-size: 26px;
+                                }
+                                @media screen and (min-width: $deskwidth){
                                     font-size: 30px;
                                 }
                             }
