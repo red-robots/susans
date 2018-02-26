@@ -1,6 +1,6 @@
 .template-index {
     >.row-1 {
-        border-top: 10px solid $color__s-grey;
+        border-top: 10px solid $color__s-medium-grey;
         img {
             width: 100%;
             display: block;
@@ -11,7 +11,7 @@
         }
     }
     >.row-2 {
-        background-color: $color__s-grey;
+        background-color: $color__s-medium-grey;
         >.wrapper.cap {
             text-align: center;
             color: white;
@@ -42,7 +42,7 @@
             width: 100%;
             top: 0;
             left: 0;
-            height: 50%;
+            height: 55%;
             z-index: -1;
             background-color: $color__s-dark-grey;
         }
@@ -54,14 +54,12 @@
                 }
                 >.col-1, >.col-2 {
                     background-color: white;
-                    // box-shadow: 0 0 20px $color__s-border;
-                    -webkit-box-shadow: 0px 5px 9px 1px rgba($color__s-border,0.33);
-                    -moz-box-shadow: 0px 5px 9px 1px rgba($color__s-border,0.33);
-                    box-shadow: 0px 5px 9px 1px rgba($color__s-border,0.33);
+                    -webkit-box-shadow: 0px 5px 30px 5px $color__s-border;
+                    -moz-box-shadow: 0px 5px 30px 5px $color__s-border;
+                    box-shadow: 0px 5px 30px 5px $color__s-border;
                     @include transition(all ease .3s);
                     @media screen and (min-width: $tabwidth){
                         float: left;
-                        // box-shadow: 0 0 50px $color__s-border;
                         width: 43%;
                     }
                     &:hover {
@@ -94,7 +92,7 @@
                             }
                             h2 {
                                 text-align: center;
-                                color: $color__s-grey;
+                                color: $color__s-dark-grey;
                                 margin: 0;
                                 font-size: 20px;
                                 font-family: $font__two;
@@ -311,13 +309,12 @@
                 >.col {
                     margin: 40px 0 0 0;
                     background-color: white;
-                    -webkit-box-shadow: 0px 5px 9px 1px rgba($color__s-border,0.33);
-                    -moz-box-shadow: 0px 5px 9px 1px rgba($color__s-border,0.33);
-                    box-shadow: 0px 5px 9px 1px rgba($color__s-border,0.33);
+                    -webkit-box-shadow: 0px 5px 30px 5px $color__s-border;
+                    -moz-box-shadow: 0px 5px 30px 5px $color__s-border;
+                    box-shadow: 0px 5px 30px 5px $color__s-border;
                     @include transition(all ease .2s);
                     @media screen and (min-width: $tabwidth){
                         float: left;
-                        box-shadow: 0 0 50px $color__s-border;
                         width: 43%;
                     }
                     &:hover {
@@ -350,7 +347,7 @@
                             }
                             h2 {
                                 text-align: center;
-                                color: $color__s-grey;
+                                color: $color__s-dark-grey;
                                 margin: 0;
                                 font-size: 20px;
                                 font-family: $font__two;

@@ -16,7 +16,7 @@ Underscores is distributed under the terms of the GNU GPL v2 or later.
 
 Normalizing styles have been helped along thanks to the fine work of
 Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
-*/@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,700|Raleway:300,400,700");/*!
+*/@import url("https://fonts.googleapis.com/css?family=Julius+Sans+One|Noto+Sans:400,400i,700");/*!
  * animate.css -http://daneden.me/animate
  * Version - 3.5.0
  * Licensed under the MIT license - http://opensource.org/licenses/MIT
@@ -587,7 +587,7 @@ optgroup{font-weight:bold}
 table{border-collapse:collapse;border-spacing:0}
 td,th{padding:0}
 button:focus{outline:0}
-body,button,input,select,textarea{color:black;font-family:"Raleway",sans-serif;font-size:16px;font-size:1rem;line-height:1.5}
+body,button,input,select,textarea{color:black;font-family:"Noto Sans",sans-serif;font-size:16px;font-size:1rem;line-height:1.5}
 h1,h2,h3,h4,h5,h6{clear:both}
 .entry-content h1{font-size:30px}
 p{margin-bottom:1.5em}
@@ -735,6 +735,7 @@ html[xmlns] .flexslider .slides{display:block}
 .copy h1{font-size:30px}
 .copy h2{font-size:25px}
 .copy h3{font-size:20px}
+.copy em{font-weight:500}
 .copy ul,.copy ol{padding:0;margin:0 0 20px 30px;font-size:inherit}
 .copy ul li,.copy ol li{margin:0;font-size:inherit;padding:0;list-style-type:disc}
 .copy ul li a,.copy ol li a{cursor:pointer}
@@ -768,14 +769,14 @@ html[xmlns] .flexslider .slides{display:block}
 }@media screen and (min-width:1200px){#masthead>.wrapper.cap>.col-2>.row-2#site-navigation>div ul li{margin:0 20px}
 }#masthead>.wrapper.cap>.col-2>.row-2#site-navigation>div ul li:first-child{margin-top:0}
 @media screen and (min-width:600px){#masthead>.wrapper.cap>.col-2>.row-2#site-navigation>div ul li:last-child{margin-right:0}
-}#masthead>.wrapper.cap>.col-2>.row-2#site-navigation>div ul li a{text-decoration:none;color:white;font-size:18px;font-weight:300;text-transform:uppercase;-webkit-transition:all ease .2s;transition:all ease .2s}
+}#masthead>.wrapper.cap>.col-2>.row-2#site-navigation>div ul li a{text-decoration:none;color:white;font-size:18px;font-weight:300;font-family:"Julius Sans One",sans-serif;text-transform:uppercase;-webkit-transition:all ease .2s;transition:all ease .2s}
 @media screen and (min-width:600px){#masthead>.wrapper.cap>.col-2>.row-2#site-navigation>div ul li a{font-size:12px}
 }@media screen and (min-width:900px){#masthead>.wrapper.cap>.col-2>.row-2#site-navigation>div ul li a{font-size:18px}
 }@media screen and (min-width:1200px){#masthead>.wrapper.cap>.col-2>.row-2#site-navigation>div ul li a{font-size:22px}
 }#masthead>.wrapper.cap>.col-2>.row-2#site-navigation>div ul li a:hover{color:#33dbff}
 #colophon{background-color:black}
 #colophon>.wrapper{background-size:cover;background-position:center}
-#colophon>.wrapper>.wrapper.cap{padding:50px 0 100px 0}
+#colophon>.wrapper>.wrapper.cap{padding:40px 0 80px 0}
 #colophon>.wrapper>.wrapper.cap>.row-1.social{text-align:center}
 #colophon>.wrapper>.wrapper.cap>.row-1.social a{color:white;text-decoration:none;margin:0 10px;font-size:30px;display:inline-block}
 @media screen and (min-width:600px){#colophon>.wrapper>.wrapper.cap>.row-1.social a{font-size:35px;margin:0 20px}
@@ -789,25 +790,24 @@ html[xmlns] .flexslider .slides{display:block}
 @media screen and (min-width:600px){#colophon>.wrapper>.wrapper.cap>.row-2>div ul li{display:inline-block;margin:0 20px}
 }#colophon>.wrapper>.wrapper.cap>.row-2>div ul li:first-child{margin-top:0}
 @media screen and (min-width:600px){#colophon>.wrapper>.wrapper.cap>.row-2>div ul li:last-child{margin-right:0}
-}#colophon>.wrapper>.wrapper.cap>.row-2>div ul li a{text-decoration:none;color:white;font-size:18px;font-weight:300;text-transform:uppercase;-webkit-transition:all ease .2s;transition:all ease .2s}
+}#colophon>.wrapper>.wrapper.cap>.row-2>div ul li a{text-decoration:none;color:white;font-size:18px;font-weight:300;text-transform:uppercase;font-family:"Julius Sans One",sans-serif;-webkit-transition:all ease .2s;transition:all ease .2s}
 @media screen and (min-width:600px){#colophon>.wrapper>.wrapper.cap>.row-2>div ul li a{font-size:14px}
 }@media screen and (min-width:900px){#colophon>.wrapper>.wrapper.cap>.row-2>div ul li a{font-size:18px}
-}@media screen and (min-width:1200px){#colophon>.wrapper>.wrapper.cap>.row-2>div ul li a{font-size:22px}
 }#colophon>.wrapper>.wrapper.cap>.row-2>div ul li a:hover{color:#33dbff}
 #offset{display:none}
-.template-index>.row-1{border-top:10px solid #b7b7b7}
+.template-index>.row-1{border-top:10px solid #666}
 .template-index>.row-1 img{width:100%;display:block}
 @media screen and (min-width:600px){.template-index>.row-1 img{float:left;width:25%}
-}.template-index>.row-2{background-color:#b7b7b7}
-.template-index>.row-2>.wrapper.cap{text-align:center;color:white;padding:20px;font-size:25px;font-family:"Open Sans",sans-serif;font-weight:300;line-height:1.2;text-transform:uppercase}
+}.template-index>.row-2{background-color:#666}
+.template-index>.row-2>.wrapper.cap{text-align:center;color:white;padding:20px;font-size:25px;font-family:"Julius Sans One",sans-serif;font-weight:300;line-height:1.2;text-transform:uppercase}
 @media screen and (min-width:600px){.template-index>.row-2>.wrapper.cap{font-size:22px}
 }@media screen and (min-width:900px){.template-index>.row-2>.wrapper.cap{font-size:30px}
 }@media screen and (min-width:1200px){.template-index>.row-2>.wrapper.cap{font-size:35px}
 }.template-index>.row-3{position:relative;z-index:1}
-.template-index>.row-3:before{content:"";display:block;position:absolute;width:100%;top:0;left:0;height:50%;z-index:-1;background-color:#383838}
+.template-index>.row-3:before{content:"";display:block;position:absolute;width:100%;top:0;left:0;height:55%;z-index:-1;background-color:#282828}
 .template-index>.row-3>.wrapper.cap>.wrapper{padding:20px 0}
 @media screen and (min-width:600px){.template-index>.row-3>.wrapper.cap>.wrapper{padding:5% 10% 8% 10%}
-}.template-index>.row-3>.wrapper.cap>.wrapper>.col-1,.template-index>.row-3>.wrapper.cap>.wrapper>.col-2{background-color:white;box-shadow:0 5px 9px 1px rgba(154,154,155,0.33);-webkit-transition:all ease .3s;transition:all ease .3s}
+}.template-index>.row-3>.wrapper.cap>.wrapper>.col-1,.template-index>.row-3>.wrapper.cap>.wrapper>.col-2{background-color:white;box-shadow:0 5px 30px 5px #282828;-webkit-transition:all ease .3s;transition:all ease .3s}
 @media screen and (min-width:600px){.template-index>.row-3>.wrapper.cap>.wrapper>.col-1,.template-index>.row-3>.wrapper.cap>.wrapper>.col-2{float:left;width:43%}
 }.template-index>.row-3>.wrapper.cap>.wrapper>.col-1:hover,.template-index>.row-3>.wrapper.cap>.wrapper>.col-2:hover{background-color:black}
 .template-index>.row-3>.wrapper.cap>.wrapper>.col-1:hover a header h2,.template-index>.row-3>.wrapper.cap>.wrapper>.col-2:hover a header h2{color:#33dbff}
@@ -817,7 +817,7 @@ html[xmlns] .flexslider .slides{display:block}
 }@media screen and (min-width:1200px){.template-index>.row-3>.wrapper.cap>.wrapper>.col-1 a,.template-index>.row-3>.wrapper.cap>.wrapper>.col-2 a{padding:40px}
 }.template-index>.row-3>.wrapper.cap>.wrapper>.col-1 a header,.template-index>.row-3>.wrapper.cap>.wrapper>.col-2 a header{margin:0 0 20px 0}
 @media screen and (min-width:600px){.template-index>.row-3>.wrapper.cap>.wrapper>.col-1 a header,.template-index>.row-3>.wrapper.cap>.wrapper>.col-2 a header{margin:0 0 40px 0}
-}.template-index>.row-3>.wrapper.cap>.wrapper>.col-1 a header h2,.template-index>.row-3>.wrapper.cap>.wrapper>.col-2 a header h2{text-align:center;color:#b7b7b7;margin:0;font-size:20px;font-family:"Open Sans",sans-serif;font-weight:300;line-height:1.2;text-transform:uppercase}
+}.template-index>.row-3>.wrapper.cap>.wrapper>.col-1 a header h2,.template-index>.row-3>.wrapper.cap>.wrapper>.col-2 a header h2{text-align:center;color:#282828;margin:0;font-size:20px;font-family:"Julius Sans One",sans-serif;font-weight:300;line-height:1.2;text-transform:uppercase}
 @media screen and (min-width:600px){.template-index>.row-3>.wrapper.cap>.wrapper>.col-1 a header h2,.template-index>.row-3>.wrapper.cap>.wrapper>.col-2 a header h2{font-size:22px}
 }@media screen and (min-width:900px){.template-index>.row-3>.wrapper.cap>.wrapper>.col-1 a header h2,.template-index>.row-3>.wrapper.cap>.wrapper>.col-2 a header h2{font-size:26px}
 }@media screen and (min-width:1200px){.template-index>.row-3>.wrapper.cap>.wrapper>.col-1 a header h2,.template-index>.row-3>.wrapper.cap>.wrapper>.col-2 a header h2{font-size:30px}
@@ -829,7 +829,7 @@ html[xmlns] .flexslider .slides{display:block}
 @media screen and (min-width:600px){.template-page>.wrapper.cap>.wrapper{padding:10% 6%}
 }.template-page>.wrapper.cap>.wrapper header.row-1{margin:0 0 20px 0}
 @media screen and (min-width:600px){.template-page>.wrapper.cap>.wrapper header.row-1{margin:0 0 3% 0}
-}.template-page>.wrapper.cap>.wrapper header.row-1 h1{margin:0;font-family:"Open Sans",sans-serif;font-weight:300;font-size:25px;text-transform:uppercase;color:#383838;line-height:1.2}
+}.template-page>.wrapper.cap>.wrapper header.row-1 h1{margin:0;font-family:"Julius Sans One",sans-serif;font-weight:300;font-size:25px;text-transform:uppercase;color:#282828;line-height:1.2}
 @media screen and (min-width:600px){.template-page>.wrapper.cap>.wrapper header.row-1 h1{font-size:35px}
 }.template-page>.wrapper.cap>.wrapper>.row-2>.col-1{width:100%}
 @media screen and (min-width:600px){.template-page>.wrapper.cap>.wrapper>.row-2>.col-1{float:left;width:70%;padding:0 7% 0 0}
@@ -840,7 +840,7 @@ html[xmlns] .flexslider .slides{display:block}
 @media screen and (min-width:600px){.template-single-project>.wrapper.cap>.wrapper{padding:10% 6% 5% 6%}
 }.template-single-project>.wrapper.cap>.wrapper header.row-1{margin:0 0 20px 0}
 @media screen and (min-width:600px){.template-single-project>.wrapper.cap>.wrapper header.row-1{margin:0 0 3% 0}
-}.template-single-project>.wrapper.cap>.wrapper header.row-1 h1{margin:0;font-family:"Open Sans",sans-serif;font-weight:300;font-size:25px;text-transform:uppercase;color:#383838;line-height:1.2}
+}.template-single-project>.wrapper.cap>.wrapper header.row-1 h1{margin:0;font-family:"Julius Sans One",sans-serif;font-weight:300;font-size:25px;text-transform:uppercase;color:#282828;line-height:1.2}
 @media screen and (min-width:600px){.template-single-project>.wrapper.cap>.wrapper header.row-1 h1{font-size:35px}
 }.template-single-project>.wrapper.cap>.wrapper>.row-2>.gallery{margin:20px 0 0 0}
 @media screen and (min-width:600px){.template-single-project>.wrapper.cap>.wrapper>.row-2>.gallery{margin:3% 0 0 0}
@@ -852,7 +852,7 @@ html[xmlns] .flexslider .slides{display:block}
 }.template-single-project>.wrapper.cap>.wrapper>.row-2>.gallery .image-container img{width:100%;display:block}
 .template-single-project>.wrapper.cap>.wrapper>.row-2>nav.next{text-align:center;margin:20px 0 0 0}
 @media screen and (min-width:600px){.template-single-project>.wrapper.cap>.wrapper>.row-2>nav.next{margin:calc(5% - 50px) 0 0 0}
-}.template-single-project>.wrapper.cap>.wrapper>.row-2>nav.next a{text-decoration:none;font-size:25px;font-family:"Open Sans",sans-serif;font-weight:300;vertical-align:middle;text-transform:uppercase;color:#383838;line-height:.8}
+}.template-single-project>.wrapper.cap>.wrapper>.row-2>nav.next a{text-decoration:none;font-size:25px;font-family:"Julius Sans One",sans-serif;font-weight:300;vertical-align:middle;text-transform:uppercase;color:#282828;line-height:.8}
 @media screen and (min-width:600px){.template-single-project>.wrapper.cap>.wrapper>.row-2>nav.next a{font-size:40px}
 }.template-single-project>.wrapper.cap>.wrapper>.row-2>nav.next a:hover{color:#33dbff}
 .template-single-project>.wrapper.cap>.wrapper>.row-2>nav.next a span{font-size:20px;line-height:1;display:inline-block;vertical-align:middle}
@@ -861,10 +861,10 @@ html[xmlns] .flexslider .slides{display:block}
 @media screen and (min-width:600px){.template-page-group>.wrapper.cap>.wrapper{padding:8% 6% 4% 6%}
 }.template-page-group>.wrapper.cap>.wrapper header.row-1{margin:0 0 30px 0}
 @media screen and (min-width:600px){.template-page-group>.wrapper.cap>.wrapper header.row-1{margin:0 0 5% 0}
-}.template-page-group>.wrapper.cap>.wrapper header.row-1 h1{margin:0;font-family:"Open Sans",sans-serif;font-weight:300;font-size:25px;text-transform:uppercase;color:#383838;line-height:1.2}
+}.template-page-group>.wrapper.cap>.wrapper header.row-1 h1{margin:0;font-family:"Julius Sans One",sans-serif;font-weight:300;font-size:25px;text-transform:uppercase;color:#282828;line-height:1.2}
 @media screen and (min-width:600px){.template-page-group>.wrapper.cap>.wrapper header.row-1 h1{font-size:35px}
-}.template-page-group>.wrapper.cap>.wrapper>.row-2>.col{margin:40px 0 0 0;background-color:white;box-shadow:0 5px 9px 1px rgba(154,154,155,0.33);-webkit-transition:all ease .2s;transition:all ease .2s}
-@media screen and (min-width:600px){.template-page-group>.wrapper.cap>.wrapper>.row-2>.col{float:left;box-shadow:0 0 50px #9a9a9b;width:43%}
+}.template-page-group>.wrapper.cap>.wrapper>.row-2>.col{margin:40px 0 0 0;background-color:white;box-shadow:0 5px 30px 5px #282828;-webkit-transition:all ease .2s;transition:all ease .2s}
+@media screen and (min-width:600px){.template-page-group>.wrapper.cap>.wrapper>.row-2>.col{float:left;width:43%}
 }.template-page-group>.wrapper.cap>.wrapper>.row-2>.col:hover{background-color:black}
 .template-page-group>.wrapper.cap>.wrapper>.row-2>.col:hover a header h2{color:#33dbff}
 .template-page-group>.wrapper.cap>.wrapper>.row-2>.col a{display:block;padding:20px;text-decoration:none}
@@ -873,7 +873,7 @@ html[xmlns] .flexslider .slides{display:block}
 }@media screen and (min-width:1200px){.template-page-group>.wrapper.cap>.wrapper>.row-2>.col a{padding:40px}
 }.template-page-group>.wrapper.cap>.wrapper>.row-2>.col a header{margin:0 0 20px 0}
 @media screen and (min-width:600px){.template-page-group>.wrapper.cap>.wrapper>.row-2>.col a header{margin:0 0 40px 0}
-}.template-page-group>.wrapper.cap>.wrapper>.row-2>.col a header h2{text-align:center;color:#b7b7b7;margin:0;font-size:20px;font-family:"Open Sans",sans-serif;font-weight:300;line-height:1.2;text-transform:uppercase}
+}.template-page-group>.wrapper.cap>.wrapper>.row-2>.col a header h2{text-align:center;color:#282828;margin:0;font-size:20px;font-family:"Julius Sans One",sans-serif;font-weight:300;line-height:1.2;text-transform:uppercase}
 @media screen and (min-width:600px){.template-page-group>.wrapper.cap>.wrapper>.row-2>.col a header h2{font-size:22px}
 }@media screen and (min-width:900px){.template-page-group>.wrapper.cap>.wrapper>.row-2>.col a header h2{font-size:26px}
 }@media screen and (min-width:1200px){.template-page-group>.wrapper.cap>.wrapper>.row-2>.col a header h2{font-size:30px}
