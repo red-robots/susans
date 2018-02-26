@@ -836,6 +836,7 @@ html[xmlns] .flexslider .slides{display:block}
 }.template-page>.wrapper.cap>.wrapper>.row-2>.col-2{width:100%}
 @media screen and (min-width:600px){.template-page>.wrapper.cap>.wrapper>.row-2>.col-2{float:left;width:30%}
 }.template-page>.wrapper.cap>.wrapper>.row-2>.col-2 img{display:block;width:100%}
+.template-single-project{background-color:#eee}
 .template-single-project>.wrapper.cap>.wrapper{padding:20px 0}
 @media screen and (min-width:600px){.template-single-project>.wrapper.cap>.wrapper{padding:10% 6% 5% 6%}
 }.template-single-project>.wrapper.cap>.wrapper header.row-1{margin:0 0 20px 0}
@@ -857,7 +858,8 @@ html[xmlns] .flexslider .slides{display:block}
 }.template-single-project>.wrapper.cap>.wrapper>.row-2>nav.next a:hover{color:#33dbff}
 .template-single-project>.wrapper.cap>.wrapper>.row-2>nav.next a span{font-size:20px;line-height:1;display:inline-block;vertical-align:middle}
 @media screen and (min-width:600px){.template-single-project>.wrapper.cap>.wrapper>.row-2>nav.next a span{font-size:30px}
-}.template-page-group>.wrapper.cap>.wrapper{padding:20px 0 40px 0}
+}.template-page-group{background-color:#eee}
+.template-page-group>.wrapper.cap>.wrapper{padding:20px 0 40px 0}
 @media screen and (min-width:600px){.template-page-group>.wrapper.cap>.wrapper{padding:8% 6% 4% 6%}
 }.template-page-group>.wrapper.cap>.wrapper header.row-1{margin:0 0 30px 0}
 @media screen and (min-width:600px){.template-page-group>.wrapper.cap>.wrapper header.row-1{margin:0 0 5% 0}
