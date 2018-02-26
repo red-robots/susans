@@ -46,7 +46,7 @@
 	}
 	h1, h2, h3 {
 	  margin: 0 0 10px 0;
-	  text-transform: uppercase;
+	  text-transform: capitalize;
 	  color: $color__text-main;
 	}
 	h1 {
@@ -200,7 +200,7 @@
 								font-size: 18px;
 								font-weight: 300;
 								font-family: $font__two;
-								text-transform: uppercase;
+								text-transform: capitalize;
 								@include transition(all ease .2s);
 								@media screen and (min-width: $tabwidth){
 									font-size: 12px;
@@ -284,7 +284,7 @@
 								color: white;
 								font-size: 18px;
 								font-weight: 300;
-								text-transform: uppercase;
+								text-transform: capitalize;
 								font-family: $font__two;
 								@include transition(all ease .2s);
 								@media screen and (min-width: $tabwidth){

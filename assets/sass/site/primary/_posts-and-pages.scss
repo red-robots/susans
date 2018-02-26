@@ -20,7 +20,7 @@
             font-family: $font__two;
             font-weight: 300;
             line-height: 1.2;
-            text-transform: uppercase;
+            text-transform: capitalize;
             @media screen and (min-width: $tabwidth){
                 font-size: 22px;
             }
@@ -98,7 +98,7 @@
                                 font-family: $font__two;
                                 font-weight: 300;
                                 line-height: 1.2;
-                                text-transform: uppercase;
+                                text-transform: capitalize;
                                 @media screen and (min-width: $tabwidth){
                                     font-size: 22px;
                                 }
@@ -149,7 +149,7 @@
                     font-family: $font__two;
                     font-weight: 300;
                     font-size: 25px;
-                    text-transform: uppercase;
+                    text-transform: capitalize;
                     color: $color__s-dark-grey;
                     line-height: 1.2;
                     @media screen and (min-width: $tabwidth){
@@ -198,7 +198,7 @@
                     font-family: $font__two;
                     font-weight: 300;
                     font-size: 25px;
-                    text-transform: uppercase;
+                    text-transform: capitalize;
                     color: $color__s-dark-grey;
                     line-height: 1.2;
                     @media screen and (min-width: $tabwidth){
@@ -255,7 +255,7 @@
                         font-family: $font__two;
                         font-weight: 300;
                         vertical-align: middle;
-                        text-transform: uppercase;
+                        text-transform: capitalize;
                         color: $color__s-dark-grey;
                         line-height: .8;
                         @media screen and (min-width: $tabwidth){
@@ -297,7 +297,7 @@
                     font-family: $font__two;
                     font-weight: 300;
                     font-size: 25px;
-                    text-transform: uppercase;
+                    text-transform: capitalize;
                     color: $color__s-dark-grey;
                     line-height: 1.2;
                     @media screen and (min-width: $tabwidth){
@@ -353,7 +353,7 @@
                                 font-family: $font__two;
                                 font-weight: 300;
                                 line-height: 1.2;
-                                text-transform: uppercase;
+                                text-transform: capitalize;
                                 @media screen and (min-width: $tabwidth){
                                     font-size: 22px;
                                 }

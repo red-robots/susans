@@ -731,7 +731,7 @@ html[xmlns] .flexslider .slides{display:block}
 .copy strong,.copy b,.copy em{font-weight:800}
 .copy a{text-decoration:none;color:black;position:relative}
 .copy a:hover{color:black;text-decoration:underline}
-.copy h1,.copy h2,.copy h3{margin:0 0 10px 0;text-transform:uppercase;color:black}
+.copy h1,.copy h2,.copy h3{margin:0 0 10px 0;text-transform:capitalize;color:black}
 .copy h1{font-size:30px}
 .copy h2{font-size:25px}
 .copy h3{font-size:20px}
@@ -769,7 +769,7 @@ html[xmlns] .flexslider .slides{display:block}
 }@media screen and (min-width:1200px){#masthead>.wrapper.cap>.col-2>.row-2#site-navigation>div ul li{margin:0 20px}
 }#masthead>.wrapper.cap>.col-2>.row-2#site-navigation>div ul li:first-child{margin-top:0}
 @media screen and (min-width:600px){#masthead>.wrapper.cap>.col-2>.row-2#site-navigation>div ul li:last-child{margin-right:0}
-}#masthead>.wrapper.cap>.col-2>.row-2#site-navigation>div ul li a{text-decoration:none;color:white;font-size:18px;font-weight:300;font-family:"Julius Sans One",sans-serif;text-transform:uppercase;-webkit-transition:all ease .2s;transition:all ease .2s}
+}#masthead>.wrapper.cap>.col-2>.row-2#site-navigation>div ul li a{text-decoration:none;color:white;font-size:18px;font-weight:300;font-family:"Julius Sans One",sans-serif;text-transform:capitalize;-webkit-transition:all ease .2s;transition:all ease .2s}
 @media screen and (min-width:600px){#masthead>.wrapper.cap>.col-2>.row-2#site-navigation>div ul li a{font-size:12px}
 }@media screen and (min-width:900px){#masthead>.wrapper.cap>.col-2>.row-2#site-navigation>div ul li a{font-size:18px}
 }@media screen and (min-width:1200px){#masthead>.wrapper.cap>.col-2>.row-2#site-navigation>div ul li a{font-size:22px}
@@ -790,7 +790,7 @@ html[xmlns] .flexslider .slides{display:block}
 @media screen and (min-width:600px){#colophon>.wrapper>.wrapper.cap>.row-2>div ul li{display:inline-block;margin:0 20px}
 }#colophon>.wrapper>.wrapper.cap>.row-2>div ul li:first-child{margin-top:0}
 @media screen and (min-width:600px){#colophon>.wrapper>.wrapper.cap>.row-2>div ul li:last-child{margin-right:0}
-}#colophon>.wrapper>.wrapper.cap>.row-2>div ul li a{text-decoration:none;color:white;font-size:18px;font-weight:300;text-transform:uppercase;font-family:"Julius Sans One",sans-serif;-webkit-transition:all ease .2s;transition:all ease .2s}
+}#colophon>.wrapper>.wrapper.cap>.row-2>div ul li a{text-decoration:none;color:white;font-size:18px;font-weight:300;text-transform:capitalize;font-family:"Julius Sans One",sans-serif;-webkit-transition:all ease .2s;transition:all ease .2s}
 @media screen and (min-width:600px){#colophon>.wrapper>.wrapper.cap>.row-2>div ul li a{font-size:14px}
 }@media screen and (min-width:900px){#colophon>.wrapper>.wrapper.cap>.row-2>div ul li a{font-size:18px}
 }#colophon>.wrapper>.wrapper.cap>.row-2>div ul li a:hover{color:#33dbff}
@@ -799,7 +799,7 @@ html[xmlns] .flexslider .slides{display:block}
 .template-index>.row-1 img{width:100%;display:block}
 @media screen and (min-width:600px){.template-index>.row-1 img{float:left;width:25%}
 }.template-index>.row-2{background-color:#666}
-.template-index>.row-2>.wrapper.cap{text-align:center;color:white;padding:20px;font-size:25px;font-family:"Julius Sans One",sans-serif;font-weight:300;line-height:1.2;text-transform:uppercase}
+.template-index>.row-2>.wrapper.cap{text-align:center;color:white;padding:20px;font-size:25px;font-family:"Julius Sans One",sans-serif;font-weight:300;line-height:1.2;text-transform:capitalize}
 @media screen and (min-width:600px){.template-index>.row-2>.wrapper.cap{font-size:22px}
 }@media screen and (min-width:900px){.template-index>.row-2>.wrapper.cap{font-size:30px}
 }@media screen and (min-width:1200px){.template-index>.row-2>.wrapper.cap{font-size:35px}
@@ -817,7 +817,7 @@ html[xmlns] .flexslider .slides{display:block}
 }@media screen and (min-width:1200px){.template-index>.row-3>.wrapper.cap>.wrapper>.col-1 a,.template-index>.row-3>.wrapper.cap>.wrapper>.col-2 a{padding:40px}
 }.template-index>.row-3>.wrapper.cap>.wrapper>.col-1 a header,.template-index>.row-3>.wrapper.cap>.wrapper>.col-2 a header{margin:0 0 20px 0}
 @media screen and (min-width:600px){.template-index>.row-3>.wrapper.cap>.wrapper>.col-1 a header,.template-index>.row-3>.wrapper.cap>.wrapper>.col-2 a header{margin:0 0 40px 0}
-}.template-index>.row-3>.wrapper.cap>.wrapper>.col-1 a header h2,.template-index>.row-3>.wrapper.cap>.wrapper>.col-2 a header h2{text-align:center;color:#282828;margin:0;font-size:20px;font-family:"Julius Sans One",sans-serif;font-weight:300;line-height:1.2;text-transform:uppercase}
+}.template-index>.row-3>.wrapper.cap>.wrapper>.col-1 a header h2,.template-index>.row-3>.wrapper.cap>.wrapper>.col-2 a header h2{text-align:center;color:#282828;margin:0;font-size:20px;font-family:"Julius Sans One",sans-serif;font-weight:300;line-height:1.2;text-transform:capitalize}
 @media screen and (min-width:600px){.template-index>.row-3>.wrapper.cap>.wrapper>.col-1 a header h2,.template-index>.row-3>.wrapper.cap>.wrapper>.col-2 a header h2{font-size:22px}
 }@media screen and (min-width:900px){.template-index>.row-3>.wrapper.cap>.wrapper>.col-1 a header h2,.template-index>.row-3>.wrapper.cap>.wrapper>.col-2 a header h2{font-size:26px}
 }@media screen and (min-width:1200px){.template-index>.row-3>.wrapper.cap>.wrapper>.col-1 a header h2,.template-index>.row-3>.wrapper.cap>.wrapper>.col-2 a header h2{font-size:30px}
@@ -829,7 +829,7 @@ html[xmlns] .flexslider .slides{display:block}
 @media screen and (min-width:600px){.template-page>.wrapper.cap>.wrapper{padding:10% 6%}
 }.template-page>.wrapper.cap>.wrapper header.row-1{margin:0 0 20px 0}
 @media screen and (min-width:600px){.template-page>.wrapper.cap>.wrapper header.row-1{margin:0 0 3% 0}
-}.template-page>.wrapper.cap>.wrapper header.row-1 h1{margin:0;font-family:"Julius Sans One",sans-serif;font-weight:300;font-size:25px;text-transform:uppercase;color:#282828;line-height:1.2}
+}.template-page>.wrapper.cap>.wrapper header.row-1 h1{margin:0;font-family:"Julius Sans One",sans-serif;font-weight:300;font-size:25px;text-transform:capitalize;color:#282828;line-height:1.2}
 @media screen and (min-width:600px){.template-page>.wrapper.cap>.wrapper header.row-1 h1{font-size:35px}
 }.template-page>.wrapper.cap>.wrapper>.row-2>.col-1{width:100%}
 @media screen and (min-width:600px){.template-page>.wrapper.cap>.wrapper>.row-2>.col-1{float:left;width:70%;padding:0 7% 0 0}
@@ -840,7 +840,7 @@ html[xmlns] .flexslider .slides{display:block}
 @media screen and (min-width:600px){.template-single-project>.wrapper.cap>.wrapper{padding:10% 6% 5% 6%}
 }.template-single-project>.wrapper.cap>.wrapper header.row-1{margin:0 0 20px 0}
 @media screen and (min-width:600px){.template-single-project>.wrapper.cap>.wrapper header.row-1{margin:0 0 3% 0}
-}.template-single-project>.wrapper.cap>.wrapper header.row-1 h1{margin:0;font-family:"Julius Sans One",sans-serif;font-weight:300;font-size:25px;text-transform:uppercase;color:#282828;line-height:1.2}
+}.template-single-project>.wrapper.cap>.wrapper header.row-1 h1{margin:0;font-family:"Julius Sans One",sans-serif;font-weight:300;font-size:25px;text-transform:capitalize;color:#282828;line-height:1.2}
 @media screen and (min-width:600px){.template-single-project>.wrapper.cap>.wrapper header.row-1 h1{font-size:35px}
 }.template-single-project>.wrapper.cap>.wrapper>.row-2>.gallery{margin:20px 0 0 0}
 @media screen and (min-width:600px){.template-single-project>.wrapper.cap>.wrapper>.row-2>.gallery{margin:3% 0 0 0}
@@ -852,7 +852,7 @@ html[xmlns] .flexslider .slides{display:block}
 }.template-single-project>.wrapper.cap>.wrapper>.row-2>.gallery .image-container img{width:100%;display:block}
 .template-single-project>.wrapper.cap>.wrapper>.row-2>nav.next{text-align:center;margin:20px 0 0 0}
 @media screen and (min-width:600px){.template-single-project>.wrapper.cap>.wrapper>.row-2>nav.next{margin:calc(5% - 50px) 0 0 0}
-}.template-single-project>.wrapper.cap>.wrapper>.row-2>nav.next a{text-decoration:none;font-size:25px;font-family:"Julius Sans One",sans-serif;font-weight:300;vertical-align:middle;text-transform:uppercase;color:#282828;line-height:.8}
+}.template-single-project>.wrapper.cap>.wrapper>.row-2>nav.next a{text-decoration:none;font-size:25px;font-family:"Julius Sans One",sans-serif;font-weight:300;vertical-align:middle;text-transform:capitalize;color:#282828;line-height:.8}
 @media screen and (min-width:600px){.template-single-project>.wrapper.cap>.wrapper>.row-2>nav.next a{font-size:40px}
 }.template-single-project>.wrapper.cap>.wrapper>.row-2>nav.next a:hover{color:#33dbff}
 .template-single-project>.wrapper.cap>.wrapper>.row-2>nav.next a span{font-size:20px;line-height:1;display:inline-block;vertical-align:middle}
@@ -861,7 +861,7 @@ html[xmlns] .flexslider .slides{display:block}
 @media screen and (min-width:600px){.template-page-group>.wrapper.cap>.wrapper{padding:8% 6% 4% 6%}
 }.template-page-group>.wrapper.cap>.wrapper header.row-1{margin:0 0 30px 0}
 @media screen and (min-width:600px){.template-page-group>.wrapper.cap>.wrapper header.row-1{margin:0 0 5% 0}
-}.template-page-group>.wrapper.cap>.wrapper header.row-1 h1{margin:0;font-family:"Julius Sans One",sans-serif;font-weight:300;font-size:25px;text-transform:uppercase;color:#282828;line-height:1.2}
+}.template-page-group>.wrapper.cap>.wrapper header.row-1 h1{margin:0;font-family:"Julius Sans One",sans-serif;font-weight:300;font-size:25px;text-transform:capitalize;color:#282828;line-height:1.2}
 @media screen and (min-width:600px){.template-page-group>.wrapper.cap>.wrapper header.row-1 h1{font-size:35px}
 }.template-page-group>.wrapper.cap>.wrapper>.row-2>.col{margin:40px 0 0 0;background-color:white;box-shadow:0 5px 30px 5px #282828;-webkit-transition:all ease .2s;transition:all ease .2s}
 @media screen and (min-width:600px){.template-page-group>.wrapper.cap>.wrapper>.row-2>.col{float:left;width:43%}
@@ -873,7 +873,7 @@ html[xmlns] .flexslider .slides{display:block}
 }@media screen and (min-width:1200px){.template-page-group>.wrapper.cap>.wrapper>.row-2>.col a{padding:40px}
 }.template-page-group>.wrapper.cap>.wrapper>.row-2>.col a header{margin:0 0 20px 0}
 @media screen and (min-width:600px){.template-page-group>.wrapper.cap>.wrapper>.row-2>.col a header{margin:0 0 40px 0}
-}.template-page-group>.wrapper.cap>.wrapper>.row-2>.col a header h2{text-align:center;color:#282828;margin:0;font-size:20px;font-family:"Julius Sans One",sans-serif;font-weight:300;line-height:1.2;text-transform:uppercase}
+}.template-page-group>.wrapper.cap>.wrapper>.row-2>.col a header h2{text-align:center;color:#282828;margin:0;font-size:20px;font-family:"Julius Sans One",sans-serif;font-weight:300;line-height:1.2;text-transform:capitalize}
 @media screen and (min-width:600px){.template-page-group>.wrapper.cap>.wrapper>.row-2>.col a header h2{font-size:22px}
 }@media screen and (min-width:900px){.template-page-group>.wrapper.cap>.wrapper>.row-2>.col a header h2{font-size:26px}
 }@media screen and (min-width:1200px){.template-page-group>.wrapper.cap>.wrapper>.row-2>.col a header h2{font-size:30px}
