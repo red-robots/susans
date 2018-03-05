@@ -132,7 +132,7 @@ jQuery(document).ready(function ($) {
 			var height = $tracking.height();
 			var w_height = $window.height();
 			var d_scroll = $document.scrollTop();
-			if(w_height+d_scroll>height+top){
+			if(w_height+d_scroll+300>height+top){
 				ajax_next_posts();
 			}
 		});
@@ -184,7 +184,7 @@ jQuery(document).ready(function ($) {
 			var height = $trackingImage.height();
 			var w_height = $window.height();
 			var d_scroll = $document.scrollTop();
-			if(w_height+d_scroll>height+top){
+			if(w_height+d_scroll+300>height+top){
 				ajax_next_image();
 			}
 		});

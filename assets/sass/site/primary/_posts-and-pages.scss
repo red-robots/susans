@@ -76,6 +76,11 @@
                         display: block;
                         padding: 20px;
                         text-decoration: none;
+                        @include flexbox();
+                        @include flexbox-justify(flex-start);
+                        @include flexbox-align-items(stretch);
+                        @include flexbox-align-content(stretch);
+                        @include flexbox-direction(column);
                         @media screen and (min-width: $tabwidth){
                             padding: 20px;
                         }
@@ -113,6 +118,7 @@
                         img {
                             display: block;
                             width: 100%;
+                            margin: auto 0 0 0;
                         }
                     }
                 }
@@ -133,6 +139,7 @@
 }
 
 .template-page {
+    background-color: $color__s-light-grey;
     >.wrapper.cap {
         >.wrapper {
             padding: 20px 0;
@@ -333,6 +340,11 @@
                         display: block;
                         padding: 20px;
                         text-decoration: none;
+                        @include flexbox();
+                        @include flexbox-justify(flex-start);
+                        @include flexbox-align-items(stretch);
+                        @include flexbox-align-content(stretch);
+                        @include flexbox-direction(column);
                         @media screen and (min-width: $tabwidth){
                             padding: 20px;
                         }
@@ -370,6 +382,7 @@
                         img {
                             display: block;
                             width: 100%;
+                            margin: auto 0 0 0;
                         }
                     }
                 }
