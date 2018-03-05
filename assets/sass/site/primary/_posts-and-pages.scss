@@ -75,6 +75,7 @@
                     a {
                         display: block;
                         padding: 20px;
+                        height: 100%;
                         text-decoration: none;
                         @include flexbox();
                         @include flexbox-justify(flex-start);
@@ -339,6 +340,7 @@
                     a {
                         display: block;
                         padding: 20px;
+                        height: 100%;
                         text-decoration: none;
                         @include flexbox();
                         @include flexbox-justify(flex-start);
