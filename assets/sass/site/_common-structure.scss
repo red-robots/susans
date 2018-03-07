@@ -103,6 +103,11 @@
 				@include flexbox-align-items(stretch);
 				@include flexbox-align-content(stretch);
 				@include flexbox-direction(column);
+				transform: scale(1);
+				@include transition(all ease .2s);
+				&:hover {
+					transform: scale(1.2);
+				}
 			}
 			a {
 				width: 100%;
