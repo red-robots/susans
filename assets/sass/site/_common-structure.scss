@@ -93,7 +93,7 @@
 			@include flexbox-align-content(stretch);
 		}
 		>.logo.col-1 {
-			width: 80%;
+			width: 100%;
 			margin: 0 auto;
 			@media screen and (min-width: $tabwidth){
 				width: 30%;
@@ -106,7 +106,7 @@
 				transform: scale(1);
 				@include transition(all ease .2s);
 				&:hover {
-					transform: scale(1.2);
+					transform: scale(1.1);
 				}
 			}
 			a {
