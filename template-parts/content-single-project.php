@@ -61,7 +61,7 @@
 					$posts = get_posts($args);
 					$index = array_search($post,$posts);
 					if($index !== false && count($posts)>1):?>
-						<nav class="next">
+						<nav class="next hidden">
                             <?php $next_index = $index < (count($posts) -1) ? $index +1 : 0; ?>
                             <a href="<?php echo get_the_permalink($posts[$next_index]);?>"><?php echo $next_post_link_text; ?>&nbsp;<span>>></span></a>
 						</nav><!-- .nav-single -->

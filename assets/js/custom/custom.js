@@ -166,6 +166,8 @@ jQuery(document).ready(function ($) {
 						$trackingImage.append(response[0]);
 						postOffsetImage+=parseInt(response[1]);
 						ajaxLockImage = false;
+					} else {
+						$('.template-single-project nav.next.hidden').removeClass("hidden");
 					}
 				},
 

@@ -855,7 +855,8 @@ html[xmlns] .flexslider .slides{display:block}
 }.template-single-project>.wrapper.cap>.wrapper>.row-2>.gallery .image-container img{width:100%;display:block}
 .template-single-project>.wrapper.cap>.wrapper>.row-2>nav.next{text-align:center;margin:20px 0 0 0}
 @media screen and (min-width:600px){.template-single-project>.wrapper.cap>.wrapper>.row-2>nav.next{margin:calc(5% - 50px) 0 0 0}
-}.template-single-project>.wrapper.cap>.wrapper>.row-2>nav.next a{text-decoration:none;font-size:25px;font-family:"Julius Sans One",sans-serif;font-weight:300;vertical-align:middle;text-transform:capitalize;color:#282828;line-height:.8}
+}.template-single-project>.wrapper.cap>.wrapper>.row-2>nav.next.hidden{display:none}
+.template-single-project>.wrapper.cap>.wrapper>.row-2>nav.next a{text-decoration:none;font-size:25px;font-family:"Julius Sans One",sans-serif;font-weight:300;vertical-align:middle;text-transform:capitalize;color:#282828;line-height:.8}
 @media screen and (min-width:600px){.template-single-project>.wrapper.cap>.wrapper>.row-2>nav.next a{font-size:40px}
 }.template-single-project>.wrapper.cap>.wrapper>.row-2>nav.next a:hover{color:#33dbff}
 .template-single-project>.wrapper.cap>.wrapper>.row-2>nav.next a span{font-size:20px;line-height:1;display:inline-block;vertical-align:middle}
