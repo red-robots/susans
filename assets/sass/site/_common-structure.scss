@@ -8,6 +8,11 @@
 		padding-left: 4% !important;
 	}
 }
+article.page,
+article.post {
+	color: $color__s-teal;
+	text-decoration: underline;
+}
 .clear-bottom {
 	&:after {
 	  clear: both;
