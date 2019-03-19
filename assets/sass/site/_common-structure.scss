@@ -8,8 +8,8 @@
 		padding-left: 4% !important;
 	}
 }
-article.page,
-article.post {
+article p.page a,
+article p.post a {
 	color: $color__s-teal;
 	text-decoration: underline;
 }

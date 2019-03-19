@@ -722,7 +722,7 @@ html[xmlns] .flexslider .slides{display:block}
 .widget select{max-width:100%}
 .cap{max-width:1500px;padding-right:20px !important;padding-left:20px !important;margin:0 auto}
 @media screen and (min-width:900px){.cap{padding-right:4% !important;padding-left:4% !important}
-}article.page,article.post{color:#33dbff;text-decoration:underline}
+}article p.page a,article p.post a{color:#33dbff;text-decoration:underline}
 .clear-bottom:after{clear:both;content:"";display:block}
 .copy{font-size:16px;color:black}
 @media screen and (min-width:600px){.copy{font-size:18px}
