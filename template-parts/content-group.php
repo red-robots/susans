@@ -20,7 +20,7 @@ global $bella_pt;
                 $args = array(
                     'post_type'=>$bella_pt,
                     'posts_per_page'=>4,
-                    'order'=>'ASC',
+                    'order'=>'DESC',
                     'orderby'=>'date',
                 );
                 $tax = get_field("category");
