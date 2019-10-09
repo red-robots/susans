@@ -19,6 +19,7 @@
 				<?php $facebook_link = get_field("facebook_link","option");
 				$linkedin_link = get_field("linkedin_link","option");
 				$instagram_link = get_field("instagram_link","option");
+				$twitter_link = get_field("twitter_link","option");
 				if($facebook_link||$instagram_link||$linkedin_link):?>
 					<div class="row-1 social">
 						<?php if($instagram_link):?>
@@ -29,6 +30,9 @@
 						<?php endif;?>
 						<?php if($facebook_link):?>
 							<a href="<?php echo $facebook_link;?>" target="_blank"><i class="fa fa-facebook"></i></a>
+						<?php endif;?>
+						<?php if($twitter_link):?>
+							<a href="<?php echo $twitter_link;?>" target="_blank"><i class="fa fa-twitter"></i></a>
 						<?php endif;?>
 					</div><!--.row-1-->
 				<?php endif;?>
